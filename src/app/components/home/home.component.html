@@ -1,0 +1,28 @@
+<div class="homeContainer">
+  <div class="newTodoContainer">
+    <input
+      required
+      ngModel
+      name="todoGroupInput"
+      #todoGroupInput="ngModel"
+      type="text"
+      class="form-control"
+      id="todoGroupInput"
+      autofocus
+      autocomplete="off"
+    />
+    <button
+      type="button"
+      class="btn btn-primary newGroupButton"
+      [disabled]="!todoGroupInput.value"
+    >
+      Add New Todo Group
+    </button>
+  </div>
+  <h1>Your Todos</h1>
+  <div class="todosContainer">
+    <app-todo-group></app-todo-group>
+    <app-todo-group></app-todo-group>
+    <app-todo-group></app-todo-group>
+  </div>
+</div>

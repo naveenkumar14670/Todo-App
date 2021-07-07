@@ -1,0 +1,48 @@
+.card {
+  width: 350px;
+  height: fit-content;
+  max-height: 350px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px -4px lightgray;
+}
+.card-body {
+  overflow-y: auto;
+}
+
+.card-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px transparent;
+  background-color: transparent;
+}
+
+.card-body::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.card-header {
+  background-color: #ffc107;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-header img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  width: 130px;
+}

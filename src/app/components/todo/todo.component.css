@@ -1,0 +1,58 @@
+.todoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoField {
+  display: flex;
+  align-items: center;
+}
+
+.todoValue {
+  margin: 5px 5px 5px 10px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.todoValueInput {
+  font-size: larger;
+  font-weight: 500;
+  margin-left: 10px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.5px solid green;
+}
+
+.todoField label {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.todoIcons {
+  width: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+img:active {
+  transform: translateY(2px);
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: #ffc107;
+  text-decoration-thickness: 4px;
+}

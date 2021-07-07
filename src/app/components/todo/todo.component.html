@@ -1,0 +1,30 @@
+<div class="todoContainer">
+  <div class="form-check todoField">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="todoCheck"
+      [checked]="todoCompleted"
+      (change)="toggle()"
+    />
+    <label
+      class="form-check-label todoValue"
+      [ngClass]="{ completed: todoCompleted }"
+      for="todoCheck"
+      *ngIf="todoEdit == false; else onTodoEdit"
+      >{{ todoValue }}
+    </label>
+    <ng-template #onTodoEdit>
+      <input
+        type="text"
+        [(ngModel)]="todoValue"
+        class="form-control shadow-none todoValueInput"
+      />
+    </ng-template>
+  </div>
+  <div class="todoIcons">
+    <img src="assets/Images/edit.png" alt="" (click)="handleTodoEdit()" />
+    <img src="assets/Images/delete.png" alt="" />
+  </div>
+</div>
